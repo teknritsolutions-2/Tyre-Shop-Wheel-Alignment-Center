@@ -1,0 +1,52 @@
+html[data-theme="dark"] {
+  --bg: #11120f;
+  --surface: #191a17;
+  --surface-raised: #20211d;
+  --surface-muted: #282923;
+  --text-primary: #f4f3ee;
+  --text-secondary: #c1c0b8;
+  --text-muted: #96968d;
+  --border: #383933;
+  --border-strong: #5c5d55;
+  --accent: #d69c2e;
+  --accent-hover: #efbd59;
+  --accent-soft: #3c311c;
+  --on-accent: #17130b;
+  --danger: #ff8585;
+  --success: #70cf9e;
+  --shadow: 0 18px 54px rgba(0, 0, 0, .34);
+  color-scheme: dark;
+}
+
+html[data-theme="dark"] .site-header { background: color-mix(in srgb, var(--surface) 96%, transparent); }
+html[data-theme="dark"] .btn-secondary:hover { background: var(--text-primary); color: #171713; }
+html[data-theme="dark"] .brand-word { color: var(--text-secondary); }
+html[data-theme="dark"] .form-status { background: color-mix(in srgb, var(--success), transparent 88%); }
+html[data-theme="dark"] .status-code { color: var(--accent-hover); }
+
+html[data-theme="dark"] .brand-tyre-track { stroke: #f4f3ee; }
+html[data-theme="dark"] .brand-tyre-accent { stroke: var(--accent-hover, #efbd59); }
+
+html[data-theme="dark"] .service-card {
+  background: var(--surface-raised);
+  border-color: var(--border);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, .28);
+}
+html[data-theme="dark"] .service-card:hover {
+  border-color: var(--border-strong);
+}
+
+html[data-theme="dark"] .principle-item {
+  background: var(--surface-raised);
+  border-color: var(--border);
+}
+html[data-theme="dark"] .principle-code {
+  color: var(--accent-hover);
+}
+html[data-theme="dark"] .expectation-num {
+  color: var(--accent-hover);
+}
+html[data-theme="dark"] .expectation-line {
+  background: linear-gradient(90deg, var(--accent-hover) 0%, #383933 100%);
+}
+

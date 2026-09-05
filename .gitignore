@@ -1,0 +1,9 @@
+# Dependencies and Scratch
+scratch/
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+.Spotlight-V100
+.Trashes

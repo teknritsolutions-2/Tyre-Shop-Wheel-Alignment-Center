@@ -1,0 +1,16 @@
+html[dir="rtl"] .mobile-drawer {
+  inset-inline-start: 0;
+  inset-inline-end: auto;
+  border-inline-end: 1px solid var(--border);
+  transform: translateX(105%);
+}
+html[dir="rtl"] .mobile-drawer.open { transform: none; }
+html[dir="rtl"] .text-link::after { content: "←"; }
+html[dir="rtl"] .text-link:hover::after { transform: translateX(-4px); }
+html[dir="rtl"] .hero-primary::before,
+html[dir="rtl"] .hero-secondary::before,
+html[dir="rtl"] .page-banner::before { transform: scaleX(-1); }
+html[dir="rtl"] .timeline-item { padding-inline: 48px 0; }
+html[dir="rtl"] .timeline-item::before { inset-inline: 0 auto; }
+html[dir="rtl"] .timeline-item::after { inset-inline: 15px auto; }
+html[dir="rtl"] .faq-answer p { padding-inline: 44px 0; }
