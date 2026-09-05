@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://teknritsolutions-2.github.io/Tyre-Shop-Wheel-Alignment-Center/sitemap.xml
