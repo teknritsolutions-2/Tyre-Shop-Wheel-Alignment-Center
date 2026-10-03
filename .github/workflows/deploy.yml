@@ -1,0 +1,68 @@
+name: Deploy TrueTrack to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Build site directory
+        run: |
+          mkdir -p _site
+          cp -r assets _site/assets
+          cp -r pages _site/pages
+          touch _site/.nojekyll
+          cat << 'EOF' > _site/index.html
+          <!doctype html>
+          <html lang="en">
+          <head>
+            <meta charset="utf-8">
+            <meta http-equiv="refresh" content="0; url=./pages/index.html">
+            <title>TrueTrack Tyres — Tyre Shop &amp; Wheel Alignment Center</title>
+            <link rel="icon" href="./assets/images/favicon.svg?v=2" type="image/svg+xml">
+            <link rel="alternate icon" href="./assets/images/favicon.png?v=2" type="image/png">
+            <script>
+              window.location.replace("./pages/index.html");
+            </script>
+          </head>
+          <body style="font-family: system-ui, -apple-system, sans-serif; text-align: center; padding: 4rem 1rem; background: #171815; color: #ffffff;">
+            <h2 style="margin-bottom: 0.5rem; color: #ffffff;">TrueTrack Tyres</h2>
+            <p style="color: #bcbcb4;">Tyre Shop &amp; Wheel Alignment Center</p>
+            <p style="margin-top: 1.5rem;">
+              <a href="./pages/index.html" style="color: #efbd59; text-decoration: underline;">
+                Click here if you are not redirected automatically.
+              </a>
+            </p>
+          </body>
+          </html>
+          EOF
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

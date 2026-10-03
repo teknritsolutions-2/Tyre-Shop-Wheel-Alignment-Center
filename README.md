@@ -17,7 +17,6 @@ TrueTrack Tyres provides drivers with practical tyre care, computerized wheel al
 - **FAQ (`pages/faq.html`)**: Common driver questions with accessible accordions.
 - **Privacy Policy (`pages/privacy.html`)** & **Terms of Service (`pages/terms.html`)**: Plain-language customer policies.
 - **404 Not Found (`pages/404.html`)**: Custom error page with navigational recovery links.
-- **Coming Soon (`pages/coming-soon.html`)**: Standby status page for upcoming customer services.
 
 ## Technologies
 - **Markup**: Semantic HTML5 with microdata schema and accessibility attributes (ARIA, focus management, keyboard trapping).
@@ -35,9 +34,9 @@ Tyre Shop & Wheel Alignment Center/
 │   │   └── rtl.css
 │   ├── js/
 │   │   ├── main.js
-│   │   └── plugins/
+│   │   └── plugins/ (if used)
 │   ├── images/
-│   └── fonts/
+│   └── fonts/ (if used)
 ├── pages/
 │   ├── index.html
 │   ├── home-2.html
@@ -50,8 +49,7 @@ Tyre Shop & Wheel Alignment Center/
 │   ├── faq.html
 │   ├── privacy.html
 │   ├── terms.html
-│   ├── 404.html
-│   └── coming-soon.html
+│   └── 404.html
 ├── documentation/
 │   ├── project-overview.md
 │   ├── IMAGE-USAGE.md

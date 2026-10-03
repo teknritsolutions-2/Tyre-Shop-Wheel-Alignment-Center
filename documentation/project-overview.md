@@ -24,7 +24,7 @@ Tyre Shop & Wheel Alignment Center/
 │   │   └── plugins/          # Third-party vendor scripts (if applicable)
 │   ├── images/               # High-resolution optimized photography and SVG brand mark
 │   └── fonts/                # Local webfont assets (if applicable)
-├── pages/                    # Complete suite of 13 public HTML pages
+├── pages/                    # Complete suite of 12 public HTML pages
 ├── documentation/            # Technical delivery documentation and media credits
 └── README.md                 # Project orientation and quick-start guide
 ```
@@ -42,4 +42,3 @@ Tyre Shop & Wheel Alignment Center/
 10. `privacy.html`: Privacy Policy — Plain-language data handling policy.
 11. `terms.html`: Terms & Conditions — Transparent terms of service and guarantee policies.
 12. `404.html`: Custom Error Page — Clear recovery navigation back to primary pages.
-13. `coming-soon.html`: Status Page — Temporary placeholder for forthcoming workshop features.
