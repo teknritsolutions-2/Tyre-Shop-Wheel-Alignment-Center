@@ -2,16 +2,17 @@
   "use strict";
 
   const brand = `
-    <svg class="brand-mark" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-      <defs>
-        <mask id="brand-tread-cutout">
-          <rect width="100" height="100" fill="#ffffff" />
-          <path d="M 77.6 73.1 A 36 36 0 1 1 81.5 35.8" stroke="#000000" stroke-width="2.2" stroke-linecap="round"/>
-          <path d="M 81.5 84.9 L 78.3 72.2 L 65.8 69.4 M 62.7 95.3 L 65.4 82.5 L 55.5 74.4 M 41.1 96.2 L 49.3 86.0 L 44.1 74.3 M 21.5 87.4 L 33.3 81.9 L 33.9 69.1 M 7.8 70.7 L 20.8 71.1 L 27.0 59.9 M 3.0 49.7 L 14.5 55.9 L 25.0 48.6 M 8.1 28.8 L 15.6 39.4 L 28.3 37.6 M 22.0 12.3 L 23.9 25.2 L 36.1 29.2 M 41.7 3.7 L 37.8 16.1 L 46.8 25.2 M 63.2 4.9 L 54.2 14.2 L 58.2 26.4 M 82.0 15.6 L 69.7 19.9 L 67.9 32.5" stroke="#000000" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
-        </mask>
-      </defs>
-      <path class="brand-tyre-track" d="M 77.6 73.1 A 36 36 0 1 1 75.5 24.5" stroke="currentColor" stroke-width="18" stroke-linecap="round" mask="url(#brand-tread-cutout)"/>
-      <path class="brand-tyre-accent" d="M 75.5 24.5 A 36 36 0 0 1 81.5 35.8" stroke="#c99022" stroke-width="18" stroke-linecap="round" mask="url(#brand-tread-cutout)"/>
+    <svg class="brand-mark" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+      <circle cx="32" cy="32" r="27.5" fill="#262822" stroke="#efbd59" stroke-width="2" />
+      <path d="M 32 6.5 A 25.5 25.5 0 0 1 52.5 17" stroke="#efbd59" stroke-width="3.8" stroke-linecap="round" />
+      <path d="M 57 33 A 25.5 25.5 0 0 1 45 53" stroke="#ffffff" stroke-width="3.2" stroke-linecap="round" />
+      <path d="M 20 56 A 25.5 25.5 0 0 1 7.5 35" stroke="#ffffff" stroke-width="3.2" stroke-linecap="round" />
+      <circle cx="32" cy="32" r="14.5" fill="#161714" stroke="#efbd59" stroke-width="1.8" />
+      <path d="M 32 32 Q 36 24 33 17.5" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" />
+      <path d="M 32 32 Q 42 34 44 42.5" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" />
+      <path d="M 32 32 Q 22 34 20 42.5" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" />
+      <circle cx="32" cy="32" r="4.6" fill="#efbd59" />
+      <circle cx="32" cy="32" r="1.8" fill="#161714" />
     </svg>
     <span class="brand-name">TrueTrack</span>`;
 

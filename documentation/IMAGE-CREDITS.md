@@ -22,3 +22,7 @@ Photography is downloaded locally from Pexels, Pixabay, Unsplash or Wikimedia Co
 - Tahamie Farooqui — tyre and workshop tools, [Unsplash IU-mLTtrJgo](https://unsplash.com/photos/a-tire-with-a-wrench-next-to-it-IU-mLTtrJgo)
 - Omotayo Kofoworola — tyre puncture and vulcanisation work, [Pexels photo 20270814](https://www.pexels.com/photo/a-man-fixing-a-tire-20270814/)
 - Benjamin Brunner — wheel service with workshop tool, [Unsplash K3cjUOMmMhc](https://unsplash.com/photos/person-in-black-jacket-holding-black-smartphone-K3cjUOMmMhc)
+- MRF Tyres — official corporate logo, Wikimedia Commons
+- CEAT — official corporate logo, Wikimedia Commons
+- Apollo Tyres — official corporate logo, Wikimedia Commons
+

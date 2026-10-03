@@ -24,8 +24,6 @@ html[data-theme="dark"] .brand-word { color: var(--text-secondary); }
 html[data-theme="dark"] .form-status { background: color-mix(in srgb, var(--success), transparent 88%); }
 html[data-theme="dark"] .status-code { color: var(--accent-hover); }
 
-html[data-theme="dark"] .brand-tyre-track { stroke: #f4f3ee; }
-html[data-theme="dark"] .brand-tyre-accent { stroke: var(--accent-hover, #efbd59); }
 
 html[data-theme="dark"] .service-card {
   background: var(--surface-raised);
@@ -49,4 +47,28 @@ html[data-theme="dark"] .expectation-num {
 html[data-theme="dark"] .expectation-line {
   background: linear-gradient(90deg, var(--accent-hover) 0%, #383933 100%);
 }
+
+html[data-theme="dark"] .about-brands-section {
+  background: var(--surface-raised);
+  border-block-color: var(--border);
+}
+html[data-theme="dark"] .about-brands-section .section-head h2 {
+  color: var(--text-primary);
+}
+html[data-theme="dark"] .about-brands-section .section-head p {
+  color: var(--text-secondary);
+}
+html[data-theme="dark"] .about-brand-card {
+  background: var(--surface);
+  border-color: var(--border);
+}
+html[data-theme="dark"] .about-brand-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .4);
+}
+html[data-theme="dark"] .about-brand-logo-frame {
+  background: #ffffff;
+  border-color: rgba(255, 255, 255, .15);
+}
+
 

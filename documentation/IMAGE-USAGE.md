@@ -27,5 +27,9 @@ Meaningful photography is intentionally assigned once. The shared SVG favicon is
 | `service-check.jpg` | Service Details: signs to notice (non-puncture states) | Close inspection image with gloved hands and wheel assembly in frame |
 | `puncture-check.jpg` | Service Details: signs to notice (`?service=puncture`) | Professional technician using inspection lamp on wheel hub & suspension under hydraulic workshop lift |
 | `service-sequence.jpg` | Service Details: four-stage sequence | Wide wheel-service photograph paired with the timeline |
+| `logo-mrf.svg` | About: Multi-brand range | Official vector logo asset for MRF Tyres |
+| `logo-ceat.svg` | About: Multi-brand range | Official vector logo asset for CEAT Tyres |
+| `logo-apollo.svg` | About: Multi-brand range | Official vector logo asset for Apollo Tyres |
 
 Automated source-reference count: every photograph above is referenced by one page or one shared CSS banner rule only.
+
