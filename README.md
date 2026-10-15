@@ -6,7 +6,7 @@ A responsive, high-performance static website for TrueTrack Tyres, a multi-brand
 TrueTrack Tyres provides drivers with practical tyre care, computerized wheel alignment, electronic dynamic balancing, certified puncture repair, and nitrogen inflation. The website features an accessible, responsive design with full Light/Dark theme switching and bi-directional Left-to-Right (LTR) and Right-to-Left (RTL) language support.
 
 ## Key Pages
-- **Home Page 1 (`pages/index.html`)**: Flagship homepage featuring technical alignment rack spotlight and tyre replacement guide.
+- **Home Page 1 (`index.html`)**: Flagship homepage featuring technical alignment rack spotlight and tyre replacement guide.
 - **Home Page 2 (`pages/home-2.html`)**: Alternative editorial landing page with vehicle category breakdowns.
 - **About Us (`pages/about.html`)**: Workshop philosophy, workshop equipment standards, and technician certifications.
 - **Services (`pages/services.html`)**: Full portfolio of core tyre care services.
@@ -38,7 +38,6 @@ Tyre Shop & Wheel Alignment Center/
 │   ├── images/
 │   └── fonts/ (if used)
 ├── pages/
-│   ├── index.html
 │   ├── home-2.html
 │   ├── about.html
 │   ├── services.html
@@ -54,6 +53,7 @@ Tyre Shop & Wheel Alignment Center/
 │   ├── project-overview.md
 │   ├── IMAGE-USAGE.md
 │   └── IMAGE-CREDITS.md
+├── index.html
 └── README.md
 ```
 
@@ -68,4 +68,4 @@ python3 -m http.server 8000
 npx serve .
 ```
 
-Then navigate to `http://localhost:8000/pages/index.html` in your web browser.
+Then navigate to `http://localhost:8000/index.html` in your web browser.

@@ -24,21 +24,22 @@ Tyre Shop & Wheel Alignment Center/
 │   │   └── plugins/          # Third-party vendor scripts (if applicable)
 │   ├── images/               # High-resolution optimized photography and SVG brand mark
 │   └── fonts/                # Local webfont assets (if applicable)
-├── pages/                    # Complete suite of 12 public HTML pages
+├── pages/                    # Inner suite of 11 public HTML sub-pages
 ├── documentation/            # Technical delivery documentation and media credits
+├── index.html                # Flagship landing page (Home Page 1)
 └── README.md                 # Project orientation and quick-start guide
 ```
 
 ## Public Pages
-1. `index.html`: Home Page 1 — Primary flagship landing page featuring technical alignment spotlight and replacement guide.
-2. `home-2.html`: Home Page 2 — Alternative editorial layout focusing on vehicle categories and precision measurement.
-3. `about.html`: About Us — Workshop philosophy, technician standards, and workshop equipment standards.
-4. `services.html`: Services Overview — Comprehensive tyre fitting, computerised alignment, balancing, puncture repair, and nitrogen filling cards.
-5. `service-details.html`: Detailed Service Specifications — Interactive inspection checklist, pricing, timeline, and FAQs.
-6. `brands.html`: Brands & Tyres — Multi-brand stock overview and driver selection guide.
-7. `pricing.html`: Transparent Pricing — Clear service pricing matrix in USD and booking guidance.
-8. `contact.html`: Contact & Appointments — Workshop address, operating hours, interactive map, and appointment booking form.
-9. `faq.html`: Frequently Asked Questions — Categorized driver FAQs with accessible accordions.
-10. `privacy.html`: Privacy Policy — Plain-language data handling policy.
-11. `terms.html`: Terms & Conditions — Transparent terms of service and guarantee policies.
-12. `404.html`: Custom Error Page — Clear recovery navigation back to primary pages.
+1. `index.html` (Project Root): Home Page 1 — Primary flagship landing page featuring technical alignment spotlight and replacement guide.
+2. `pages/home-2.html`: Home Page 2 — Alternative editorial layout focusing on vehicle categories and precision measurement.
+3. `pages/about.html`: About Us — Workshop philosophy, technician standards, and workshop equipment standards.
+4. `pages/services.html`: Services Overview — Comprehensive tyre fitting, computerised alignment, balancing, puncture repair, and nitrogen filling cards.
+5. `pages/service-details.html`: Detailed Service Specifications — Interactive inspection checklist, pricing, timeline, and FAQs.
+6. `pages/brands.html`: Brands & Tyres — Multi-brand stock overview and driver selection guide.
+7. `pages/pricing.html`: Transparent Pricing — Clear service pricing matrix in USD and booking guidance.
+8. `pages/contact.html`: Contact & Appointments — Workshop address, operating hours, interactive map, and appointment booking form.
+9. `pages/faq.html`: Frequently Asked Questions — Categorized driver FAQs with accessible accordions.
+10. `pages/privacy.html`: Privacy Policy — Plain-language data handling policy.
+11. `pages/terms.html`: Terms & Conditions — Transparent terms of service and guarantee policies.
+12. `pages/404.html`: Custom Error Page — Clear recovery navigation back to primary pages.

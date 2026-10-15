@@ -22,29 +22,33 @@
 
   class SiteHeader extends HTMLElement {
     connectedCallback() {
+      const inPages = /\/pages\//.test(window.location.pathname);
+      const homePath = inPages ? "../index.html" : "index.html";
+      const p = inPages ? "" : "pages/";
+
       this.innerHTML = `
         <a class="skip-link" href="#main-content">Skip to content</a>
         <header class="site-header">
           <div class="container nav-shell">
-            <a class="brand" href="index.html" aria-label="TrueTrack Tyres home">${brand}</a>
+            <a class="brand" href="${homePath}" aria-label="TrueTrack Tyres home">${brand}</a>
             <nav class="desktop-nav" aria-label="Primary navigation">
               <div class="home-menu">
                 <button class="dropdown-trigger" type="button" data-home-trigger aria-expanded="false" aria-controls="home-dropdown">Home <span class="chevron" aria-hidden="true">▾</span></button>
                 <div class="dropdown-panel" id="home-dropdown" data-home-panel>
-                  <a href="index.html">Home Page 1</a>
-                  <a href="home-2.html">Home Page 2</a>
+                  <a href="${homePath}">Home Page 1</a>
+                  <a href="${p}home-2.html">Home Page 2</a>
                 </div>
               </div>
-              <a class="nav-link" href="about.html" data-nav-page="about.html">About</a>
-              <a class="nav-link" href="services.html" data-nav-page="services.html,service-details.html">Services</a>
-              <a class="nav-link" href="brands.html" data-nav-page="brands.html">Brands</a>
-              <a class="nav-link" href="pricing.html" data-nav-page="pricing.html">Pricing</a>
-              <a class="nav-link" href="contact.html" data-nav-page="contact.html">Contact</a>
+              <a class="nav-link" href="${p}about.html" data-nav-page="about.html">About</a>
+              <a class="nav-link" href="${p}services.html" data-nav-page="services.html,service-details.html">Services</a>
+              <a class="nav-link" href="${p}brands.html" data-nav-page="brands.html">Brands</a>
+              <a class="nav-link" href="${p}pricing.html" data-nav-page="pricing.html">Pricing</a>
+              <a class="nav-link" href="${p}contact.html" data-nav-page="contact.html">Contact</a>
             </nav>
             <div class="nav-utilities">
               <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch to dark mode">${themeIcons}</button>
               <button class="icon-btn" type="button" data-dir-toggle aria-label="Switch to right-to-left direction">RTL</button>
-              <a class="btn btn-primary" href="contact.html#appointment">Book Appointment</a>
+              <a class="btn btn-primary" href="${p}contact.html#appointment">Book Appointment</a>
             </div>
             <button class="menu-btn" type="button" data-menu-open aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation"><span class="menu-lines" aria-hidden="true"></span></button>
           </div>
@@ -52,13 +56,13 @@
         <div class="drawer-backdrop" data-drawer-backdrop></div>
         <aside class="mobile-drawer" id="mobile-menu" data-drawer aria-hidden="true" aria-label="Mobile navigation" inert>
           <div class="drawer-head">
-            <a class="brand" href="index.html" aria-label="TrueTrack Tyres home">${brand}</a>
+            <a class="brand" href="${homePath}" aria-label="TrueTrack Tyres home">${brand}</a>
             <button class="icon-btn" type="button" data-menu-close aria-label="Close navigation">×</button>
           </div>
           <nav class="drawer-nav" aria-label="Mobile navigation links">
-            <a href="index.html">Home Page 1</a><a href="home-2.html">Home Page 2</a>
-            <a href="about.html">About</a><a href="services.html">Services</a><a href="brands.html">Brands</a><a href="pricing.html">Pricing</a><a href="contact.html">Contact</a>
-            <a href="contact.html#appointment">Book Appointment</a>
+            <a href="${homePath}">Home Page 1</a><a href="${p}home-2.html">Home Page 2</a>
+            <a href="${p}about.html">About</a><a href="${p}services.html">Services</a><a href="${p}brands.html">Brands</a><a href="${p}pricing.html">Pricing</a><a href="${p}contact.html">Contact</a>
+            <a href="${p}contact.html#appointment">Book Appointment</a>
           </nav>
           <div class="drawer-controls">
             <div><span class="control-label">DISPLAY</span><div class="segmented"><button class="segment-btn" type="button" data-theme-choice="light" aria-pressed="true">Light</button><button class="segment-btn" type="button" data-theme-choice="dark" aria-pressed="false">Dark</button></div></div>
@@ -70,16 +74,20 @@
 
   class SiteFooter extends HTMLElement {
     connectedCallback() {
+      const inPages = /\/pages\//.test(window.location.pathname);
+      const homePath = inPages ? "../index.html" : "index.html";
+      const p = inPages ? "" : "pages/";
+
       this.innerHTML = `
         <footer class="site-footer">
           <div class="container footer-grid">
-            <div class="footer-brand"><a class="brand" href="index.html" aria-label="TrueTrack Tyres home">${brand}</a><p>Practical tyre care, computerised alignment and clear service guidance for everyday drivers.</p></div>
-            <div><h2 class="footer-title">Navigation</h2><div class="footer-links"><a href="index.html">Home Page 1</a><a href="home-2.html">Home Page 2</a><a href="about.html">About</a><a href="services.html">Services</a><a href="brands.html">Brands</a><a href="pricing.html">Pricing</a><a href="contact.html">Contact</a></div></div>
-            <div><h2 class="footer-title">Services</h2><div class="footer-links"><a href="service-details.html?service=fitting">Tyre Fitting</a><a href="service-details.html?service=alignment">Wheel Alignment</a><a href="service-details.html?service=balancing">Wheel Balancing</a><a href="service-details.html?service=puncture">Puncture Repair</a><a href="service-details.html?service=nitrogen">Nitrogen Filling</a></div></div>
+            <div class="footer-brand"><a class="brand" href="${homePath}" aria-label="TrueTrack Tyres home">${brand}</a><p>Practical tyre care, computerised alignment and clear service guidance for everyday drivers.</p></div>
+            <div><h2 class="footer-title">Navigation</h2><div class="footer-links"><a href="${homePath}">Home Page 1</a><a href="${p}home-2.html">Home Page 2</a><a href="${p}about.html">About</a><a href="${p}services.html">Services</a><a href="${p}brands.html">Brands</a><a href="${p}pricing.html">Pricing</a><a href="${p}contact.html">Contact</a></div></div>
+            <div><h2 class="footer-title">Services</h2><div class="footer-links"><a href="${p}service-details.html?service=fitting">Tyre Fitting</a><a href="${p}service-details.html?service=alignment">Wheel Alignment</a><a href="${p}service-details.html?service=balancing">Wheel Balancing</a><a href="${p}service-details.html?service=puncture">Puncture Repair</a><a href="${p}service-details.html?service=nitrogen">Nitrogen Filling</a></div></div>
             <div><h2 class="footer-title">Visit / Contact</h2><div class="footer-contact"><p><a href="tel:+4310000000">+43 1 000 0000</a></p><p><a href="mailto:contact@truetrack.at">contact@truetrack.at</a></p><p>Triester Straße 120<br>1100 Wien, Austria</p><p>Mon–Sat: 8:30 AM–7:30 PM<br>Sun: 9:00 AM–5:00 PM</p></div></div>
-            <div><h2 class="footer-title">Info</h2><div class="footer-links"><a href="faq.html">FAQ</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div></div>
+            <div><h2 class="footer-title">Info</h2><div class="footer-links"><a href="${p}faq.html">FAQ</a><a href="${p}privacy.html">Privacy</a><a href="${p}terms.html">Terms</a></div></div>
           </div>
-          <div class="container footer-bottom"><span>© <span data-year></span> TrueTrack Tyres. All rights reserved.</span><div class="footer-bottom-links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div></div>
+          <div class="container footer-bottom"><span>© <span data-year></span> TrueTrack Tyres. All rights reserved.</span><div class="footer-bottom-links"><a href="${p}privacy.html">Privacy</a><a href="${p}terms.html">Terms</a></div></div>
         </footer>
         <button class="scroll-top" type="button" data-scroll-top aria-label="Scroll to top">↑</button>`;
     }
@@ -240,7 +248,8 @@
   desktopMq.addEventListener("change", (event) => { if (event.matches) closeDrawer(); });
 
   // Mark current primary navigation item.
-  const filename = location.pathname.split("/").pop() || "index.html";
+  const rawFilename = location.pathname.split("/").pop() || "index.html";
+  const filename = rawFilename.split("?")[0].split("#")[0] || "index.html";
   document.querySelectorAll("[data-nav-page]").forEach((link) => {
     const pages = link.dataset.navPage.split(",");
     if (pages.includes(filename)) {
@@ -249,6 +258,15 @@
     }
   });
   if (["index.html", "home-2.html"].includes(filename)) homeTrigger?.classList.add("active");
+  if (filename === "index.html") {
+    document.querySelectorAll('#home-dropdown a[href$="index.html"], .drawer-nav a[href$="index.html"]').forEach((el) => {
+      el.setAttribute("aria-current", "page");
+    });
+  } else if (filename === "home-2.html") {
+    document.querySelectorAll('#home-dropdown a[href$="home-2.html"], .drawer-nav a[href$="home-2.html"]').forEach((el) => {
+      el.setAttribute("aria-current", "page");
+    });
+  }
 
   // Reveal motion: card internals remain separate from moving tracks.
   const revealElements = [...document.querySelectorAll(".reveal, .reveal-inner")];
